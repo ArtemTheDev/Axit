@@ -56,13 +56,11 @@ body {
     z-index: 100;
 }
 
-.header {
-	padding-top:60px;
-}
+.header_inner_text img { width:200px; }
 
 .slider {
 	width:100%;
-	height:714px;
+	height:774px;
 	overflow:hidden;
 	position: relative;
 }
@@ -72,7 +70,7 @@ body {
 	background-size: cover;
 	background-position: center center;
     width: 100%;
-    height: 714px;
+    height: 774px;
     opacity:0;
     transition:0.5s;
 }
@@ -87,7 +85,7 @@ body {
 
 
 .header_content {
-	padding-top: 100px;
+	padding-top: 160px;
     z-index: 1;
     position: absolute;
     margin-left:auto; margin-right:auto;
@@ -109,7 +107,7 @@ body {
 }
 
 .reg {
-	top: 100px;
+	top: 160px;
     position: absolute;
     width: 374px;
     height: 375px;
@@ -146,7 +144,7 @@ body {
 
 .up .text {justify-content: center; display: flex; padding-top: 15px; font-weight:800; font-size:larger;}
 
-.mid input{ border: none;  border-bottom: 1px solid #d6d6d6; margin-top:50px; width:80%; color:black;
+.mid input{ border: none;  border-bottom: 1px solid #d6d6d6; margin-top:60px; width:80%; color:black;
 padding-bottom: 10px; font-size: 16px; transition: .3s;
 }
 .mid input::-webkit-input-placeholder { color: #d6d6d6; }
@@ -296,7 +294,18 @@ padding-bottom: 10px; font-size: 16px; transition: .3s;
 
 	/**RegForm change position**/
 	.reg {position: unset;}
-	.slider {height:950px; text-align: -webkit-center;}
-	.sliderInner { height:950px; }
+	.slider {height:1100px; text-align: -webkit-center;}
+	.sliderInner { height:1100px; }
 
 }
+
+/** VERY SMALL RESOLUTIONS **/
+@media(max-width:420px) {
+	.header_inner_text { width:100%; }
+	.header_desc1 {font-size: 25px;}
+	.header_desc2 {font-size:10px;}
+	.reg{ width:100%; }
+	.reg .up {height:94px;}
+}
+
+@media(max-width:240px) { .header_inner_text img { width:100%; } }
